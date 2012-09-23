@@ -1,0 +1,109 @@
+#CTopicContainerContentBackground{
+	width: 908px;
+	height: 400px;
+	position: absolute;
+	margin-left: 20px;
+	z-index: 0;
+	background-image: url(../../img/layouts/default/elements/content_background.png);
+	float: left;
+	left: -3px;
+}
+#CTopicContentContainer{
+	position: relative;
+	width: 908px;
+	height: 600px;
+	z-index: 1;
+	float: left;
+	left: -3px;
+}
+#CTopicBottomSpacer{
+	position: relative;
+	width: 948px;
+	height: 128px;
+	float: left;
+	position: relative;
+	background-image: url(../../img/layouts/default/elements/content_background_footer.png);
+	left: -3px;
+}
+#CTopicContainer{
+	position: relative;
+	width: 902px;
+	float: left;
+	left: 20px;
+	z-index: 2;
+	background: #100905;
+	min-height: 600px;
+}
+#CTopicBackgroundTop{
+	position: absolute;
+	width: 902px;
+	height: 120px;
+	top: 0px;
+	left: 0px;
+	background-image: url(../../img/layouts/default/elements/forum_background_top.png);
+	z-index: -1;
+}
+#CTopicLeftColumn{
+	position: relative;
+	float: left;
+	width: 250px;
+	min-height: 400px;
+	margin-top: 30px;
+}
+#CTopicRightColumn{
+	position: relative;
+	float: left;
+	width: 640px;
+	margin-top: 30px;
+}
+.profileUserInfoContainer{
+	position: relative;
+	float: left;
+	height: 75px;
+	min-width: 75px;
+}
+.profileUserInfoText{
+	position: relative;
+	clear: both;
+	height: 15px;
+	margin-left: 5px;
+	color: #dfd0ab;
+	font-weight: bold;
+}
+.profileUserAvatar{
+	position: relative;
+	float: left;
+	width: 75px;
+	height: 75px;
+}
+.formContainer{
+	margin-top: 11px;
+}
+.formField{
+	position: relative;
+	margin-bottom: 10px;
+	width: 555px;
+}
+.formFieldSubmit{
+	float: right;
+}
+#CTopicTitle{
+	width: 300px;
+	height: 40px;
+	background-image: url(../../img/layouts/default/elements/search.png);
+	background-repeat: no-repeat;
+	margin-bottom: 9px;
+}
+.CTopicTitleField{
+	width: 290px;
+	height: 22px;
+	margin-top: 5px;
+	border: 0px;
+	margin-left: 5px;
+	outline: none;
+	font-weight: bold;
+	font-size: 16px;
+}
+.CTopicBody{
+	resize: vertical;
+}

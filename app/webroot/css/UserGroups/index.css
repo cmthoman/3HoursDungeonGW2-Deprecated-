@@ -1,0 +1,75 @@
+#containerContentBackground{
+	width: 908px;
+	height: 400px;
+	position: absolute;
+	margin-left: 20px;
+	z-index: 0;
+	background-image: url(../../img/layouts/default/elements/content_background.png);
+	float: left;
+	left: -3px;
+}
+#contentContainer{
+	position: relative;
+	width: 908px;
+	height: 600px;
+	z-index: 1;
+	float: left;
+	left: -3px;
+}
+#bottomSpacer{
+	position: relative;
+	width: 948px;
+	height: 128px;
+	float: left;
+	position: relative;
+	background-image: url(../../img/layouts/default/elements/content_background_footer.png);
+	left: -3px;
+}
+.groupQueueContainer{
+	width: 902px;
+	float: left;
+	margin-left: 23px;
+	color: #dfd0ab;
+}
+.userName{
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 30px;
+	background: #3b1c0a;
+	padding: 5px;
+}
+.displayName{
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 30px;
+	background: #3b1c0a;
+	padding: 5px;
+}
+.requestingGroup{
+	position: relative;
+	float: left;
+	width: 250px;
+	height: 30px;
+	background: #3b1c0a;
+	padding: 5px;
+}
+.userEmail{
+	position: relative;
+	float: left;
+	width: 250px;
+	height: 30px;
+	background: #3b1c0a;
+	padding: 5px;
+}
+.action{
+	position: relative;
+	float: left;
+	width: 150px;
+	height: 30px;
+	background: #3b1c0a;
+	padding: 5px;
+}
+
+

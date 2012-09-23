@@ -1,0 +1,265 @@
+#CTopicContainerContentBackground{
+	width: 908px;
+	height: 400px;
+	position: absolute;
+	margin-left: 20px;
+	z-index: 0;
+	background-image: url(/../../img/layouts/default/elements/content_background.png);
+	float: left;
+	left: -3px;
+	border: 1px solid #150e0b;
+}
+#CTopicContentContainer{
+	position: relative;
+	width: 908px;
+	height: 600px;
+	z-index: 1;
+	float: left;
+	left: -3px;
+}
+#CTopicBottomSpacer{
+	position: relative;
+	width: 948px;
+	height: 128px;
+	float: left;
+	position: relative;
+	background-image: url(/../../img/layouts/default/elements/content_background_footer.png);
+	left: -3px;
+}
+#CTopicContainer{
+	position: relative;
+	width: 902px;
+	float: left;
+	left: 20px;
+	z-index: 2;
+	background: #100905;
+	min-height: 600px;
+}
+#CTopicBackgroundTop{
+	position: absolute;
+	width: 902px;
+	height: 120px;
+	top: 0px;
+	left: 0px;
+	background-image: url(/../../img/layouts/default/elements/forum_background_top.png);
+	z-index: -1;
+}
+.CTopicPostContainer{
+	behavior: url(/PIE.htc);
+	clear: both;
+	float: left;
+	background: url(/../../img/layouts/default/elements/forum_post_bg_top.png) no-repeat top, 
+				url(/../../img/layouts/default/elements/forum_post_bg_bottom.png) no-repeat bottom,
+				url(/../../img/layouts/default/elements/forum_post_bg.png) repeat-y;
+	-pie-background: url(/../../img/layouts/default/elements/forum_post_bg_top.png) no-repeat top, 
+				url(/../../img/layouts/default/elements/forum_post_bg_bottom.png) no-repeat bottom,
+				url(/../../img/layouts/default/elements/forum_post_bg.png) repeat-y;			
+	width: 900px;
+	border: 1px solid #150e0b;
+}
+.CTopicLeftColumn{
+	position: relative;
+	float: left;
+	width: 250px;
+	min-height: 125px;
+	margin-top: 10px;
+}
+.CTopicRightColumn{
+	position: relative;
+	float: left;
+	width: 640px;
+	margin-top: 10px;
+	color: #dfd0ab;
+	min-height: 125px;
+}
+.profileUserInfoContainer{
+	position: relative;
+	float: left;
+	height: 75px;
+	min-width: 75px;
+}
+.profileUserInfoText{
+	position: relative;
+	clear: both;
+	height: 15px;
+	margin-left: 5px;
+	color: #dfd0ab;
+	font-weight: bold;
+}
+.profileUserAvatar{
+	position: relative;
+	float: left;
+	width: 75px;
+	height: 75px;
+}
+.formContainer{
+	margin-top: 11px;
+}
+.formField{
+	position: relative;
+	margin-bottom: 10px;
+	width: 555px;
+}
+.formFieldSubmit{
+	float: right;
+}
+#CTopicTitle{
+	width: 300px;
+	height: 40px;
+	background-image: url(/../../img/layouts/default/elements/search.png);
+	background-repeat: no-repeat;
+	margin-bottom: 9px;
+}
+.CTopicTitleField{
+	width: 290px;
+	height: 22px;
+	margin-top: 5px;
+	border: 0px;
+	margin-left: 5px;
+	outline: none;
+	font-weight: bold;
+	font-size: 16px;
+}
+.CTopicBody{
+	resize: vertical;
+	height: 200px;
+}
+.CTopicThreadTopic{
+	font-size: 20px;
+	color: #dfd0ab;
+	position: absolute;
+	top: 40px;
+	left: 11px;
+}
+.CTopicThreadTopicEditable{
+	position: absolute;
+	top: 40px;
+	left: 10px;
+}
+.CTopicThreadTopicEditable .topicField{
+	height: 22px;
+	font-size: 20px;
+}
+.CTopicReply{
+	font-size: 20px;
+	color: #dfd0ab;
+	position: absolute;
+	top: 85px;
+	left: 10px;
+}
+.CTopicPaginationHolder{
+	position: absolute;
+	top: 98px;
+	right: 10px;
+}
+.CTopicThreadControls{
+	position: absolute;
+	top: 35px;
+	right: 10px;
+	min-width: 400px;
+}
+.topicMove{
+	margin-left: 10px;
+	float: right;
+}
+.CTopicPaginationHolderFooter{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.paginationPage{
+	behavior: url(/PIE.htc);
+	padding-left: 12px;
+	padding-right: 12px;
+	height: 18px;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	text-align: center;
+	padding-top: 4px;
+	-pie-background: url(/../../img/layouts/default/elements/forum_pagination_button_left.png) no-repeat top left,
+	url(/../../img/layouts/default/elements/forum_pagination_button_right.png) no-repeat top right,
+	url(/../../img/layouts/default/elements/forum_pagination_button.png) repeat-x top;
+	
+	background: url(/../../img/layouts/default/elements/forum_pagination_button_left.png) no-repeat top left, 
+	url(/../../img/layouts/default/elements/forum_pagination_button_right.png) no-repeat top right,
+	url(/../../img/layouts/default/elements/forum_pagination_button.png) repeat-x;
+	color: #dfd0ab;
+}
+.paginationPageSelected{
+	behavior: url(/PIE.htc);
+	padding-left: 12px;
+	padding-right: 12px;
+	height: 18px;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	text-align: center;
+	padding-top: 4px;
+	-pie-background: url(/../../img/layouts/default/elements/forum_pagination_button_left_selected.png) no-repeat top left,
+	url(/../../img/layouts/default/elements/forum_pagination_button_right_selected.png) no-repeat top right,
+	url(/../../img/layouts/default/elements/forum_pagination_button_selected.png) repeat-x top;
+	
+	background: url(/../../img/layouts/default/elements/forum_pagination_button_left_selected.png) no-repeat top left, 
+	url(/../../img/layouts/default/elements/forum_pagination_button_right_selected.png) no-repeat top right,
+	url(/../../img/layouts/default/elements/forum_pagination_button_selected.png) repeat-x;
+	color: #dfd0ab;
+}
+.paginationPage a{
+	color: #dfd0ab;
+}
+.paginationPageSelected a{
+	color: #dfd0ab;
+}
+
+.ellipsis{
+	position: relative;
+	float: left;
+	color: #dfd0ab;
+	font-weight: bold;
+	font-size: 20px;
+	height: 22px;
+	top: -6px;
+	margin-left: 11px;
+	margin-right: 7px;
+}
+.replySmall{
+	position: absolute;
+	right: 5px;
+	bottom: 10px;
+	visibility: hidden;
+}
+.postControls{
+	position: absolute;
+	right: 70px;
+	bottom: 10px;
+	visibility: hidden;
+}
+.timeStamp{
+	position: absolute;
+	right: 5px;
+	top: 8px;
+	font-size: 10px;
+	color: #847369;
+}
+.postBody{
+	margin-bottom: 50px;
+	word-wrap: break-word;
+	width: 550px;
+}
+.loginReply{
+	margin-left: 130px;
+	margin-top: 20px;
+}
+.loginFirst{
+	margin-left: 140px;
+	margin-top: 20px;
+	font-size: 14px;
+}
+.lockedText{
+	margin-left: 100px;
+	margin-top: 20px;
+	font-size: 14px;
+	text-align: center;
+	width: 200px;
+}

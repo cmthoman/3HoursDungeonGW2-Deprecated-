@@ -1,0 +1,120 @@
+/** Default CSS File for the Home Page */
+.containerOneThird{
+	float: left;
+	width: 305px;
+	min-height: 50px;
+	position: relative;
+	margin-bottom: 10px;
+}
+.containerTwoThirds{
+	float: left;
+	width: 584px;
+	min-height: 50px;
+	position: relative;
+}
+#bannerRightBorder{
+	width: 18px;
+	height: 400px;
+	background-image: url(../../img/layouts/default/elements/content_left_shadow.png);
+	float: left;
+	position: relative;
+	margin-top: 10px;
+}
+.articleContainer{
+	position: relative;
+	width: 584px;
+	min-height: 150px;
+	background-image: url(../../img/layouts/default/elements/news_background.png);
+	margin-bottom: 3px;
+	float: left;
+	z-index: 1;
+	line-height: 20px;
+}
+.articleContainer ul{
+	margin: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+	line-height: 20px;
+	
+}
+.articleSpacer{
+	width: 564px;
+	padding: 10px;
+	z-index: 2;
+}
+.articleContainerBackgroundTop{
+	position: absolute;
+	width: 584px;
+	height: 50px;
+	background-image: url(../../img/layouts/default/elements/news_background_top.png);
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+.articleContainerBackgroundBottom{
+	position: absolute;
+	width: 584px;
+	height: 50px;
+	background-image: url(../../img/layouts/default/elements/news_background_bottom.png);
+	bottom: 0px;
+	z-index: -1;
+	left: 0px;
+}
+.articleHeader{
+	width: 584px;
+	height: 20px;
+	float: left;
+}
+.articleTitle{
+	font-size: 16px;
+	font-weight: bold;
+	color: #dfd0ab;
+	float: left;
+}
+.articleControls{
+	float: right;
+	height: 30px;
+	margin-bottom: 10px;
+}
+.articlePoster{
+	font-size: 11px;
+	color: #dfd0ab;
+	clear: both;
+}
+.articleBody{
+	margin-top: 25px;
+	float: left;
+	color: #dfd0ab;
+	width: 564px;
+}
+.articleImage{
+	margin-top: 40px;
+	float: left;
+	width: 140px;
+	height: 100px;
+	border: 1px solid black;
+}
+.readMore{
+	color: #dfd0ab;
+	margin-top: 10px;
+	float: left;
+	margin-bottom: 10px;
+}
+.articleArchiveContainer{
+	position: relative;
+	width: 584px;
+	min-height: 100px;
+	background-image: url(../../img/layouts/default/elements/news_background.png);
+	margin-bottom: 3px;
+	float: left;
+	z-index: 1
+}
+.articleArchiveSpacer{
+	position: relative;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	top: 25px;
+	z-index: 2;
+}

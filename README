@@ -1,0 +1,15 @@
+3 Hours Dungeon is a chain of interconnected websites built to support a large gaming community. Our goal is to provide members with content for all the games we support. Each game resides on a "portal" and each portal has a list of user user roles, profiles and game features, but is connected through a universal log-in system.
+
+Every "Portal" is based off of our "Base" project hub which contains the core elements for each 3 Hours Dungeon "Portal". From the base, specific features emerge for each portal such as extensive profile customization and unqiue features for the game being viewed.
+
+The entire project is based on CakePHP. Configuration is simple and should already be contained within these files. Installation only requires a webserver running PHP 5.2 or higher and MySQL 5.x or higher. Simply drop the project into your webserver and configure your database to begin.
+
+Setting up your database:
+
+The website log-in system requires that you have the database named "3hd_shared" created. Simply import "clean_3hd_shared.sql" into this database to begin. Each "portal" has a "content" database named <abreviated game name>_content. This is the Guild Wars 2 portal, the content database is named "gw2_content". Simply import "clean_gw2_content.sql" into your database to begin.
+
+Connecting the project to your database:
+
+To connect to the databse you will need to locate the database.php file in "projectroot/app/config". At the bottom you will see two configurations, one for the shared database and one for the content database. Change the username, password and host to match your MySQL server setup.
+
+Congrats, you should be connected and ready to begin! If you have any questions please contact me via github or email @ epimyth@gmail.com

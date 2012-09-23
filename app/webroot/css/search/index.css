@@ -1,0 +1,205 @@
+#searchContainerContentBackground{
+	width: 908px;
+	height: 400px;
+	position: absolute;
+	margin-left: 20px;
+	z-index: 0;
+	background-image: url(../../img/layouts/default/elements/content_background.png);
+	float: left;
+	left: -3px;
+}
+#searchContentContainer{
+	position: relative;
+	width: 908px;
+	height: 600px;
+	z-index: 1;
+	float: left;
+	left: -3px;
+}
+#searchBottomSpacer{
+	position: relative;
+	width: 948px;
+	height: 128px;
+	float: left;
+	position: relative;
+	background-image: url(../../img/layouts/default/elements/content_background_footer.png);
+	left: -3px;
+}
+#searchContainer{
+	position: relative;
+	width: 902px;
+	float: left;
+	left: 20px;
+	z-index: 2;
+	background: #100905;
+	min-height: 600px;
+}
+#searchBackgroundTop{
+	position: absolute;
+	width: 902px;
+	height: 120px;
+	top: 0px;
+	left: 0px;
+	background-image: url(../../img/layouts/default/elements/forum_background_top.png);
+	z-index: -1;
+}
+#searchLeftColumn{
+	position: relative;
+	float: left;
+	width: 190px;
+	min-height: 400px;
+	background-image: url(../../img/user_profiles/profile_navigation_repeat.png);
+	margin-top: 30px;
+}
+#searchLeftColumnBottom{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 190px;
+	height: 150px;
+	background-image: url(../../img/user_profiles/profile_navigation_bottom.png);
+}
+#searchRightColumn{
+	position: relative;
+	float: left;
+	width: 692px;
+	margin-top: 10px;
+}
+#searchbarContainer{
+	float: left;
+}
+.searchButton{
+	position: relative;
+	width: 27px;
+	height: 27px;
+	float: right;
+	top: -25px;
+	right: 8px;
+}
+.searchField1{
+	border: none;
+	border-color: transparent;
+	outline: none;
+	width: 250px;
+	margin-left: 8px;
+	height: 20px;
+	margin-top: 6px;
+	color: #737373;
+}
+.profileUserAvatar{
+	position: relative;
+	float: left;
+	width: 65px;
+	height: 65px;
+}
+.profileUserInfoText{
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #dfd0ab;
+}
+.searchCatergoryUserResult{
+	margin-bottom: 10px;
+	margin-left: 5px;
+	width: 205px;
+	float: left;
+	margin-right: 20px;
+}
+.searchRightColumnContentTransparent{
+	position: relative;
+	float: left;
+	width: 692px;
+	min-height: 100px;
+	margin-top: 5px;
+	border-bottom: 1px solid #2e231c;
+	padding-bottom: 10px;
+}
+.searchRightColumnContentBg{
+	position: relative;
+	float: left;
+	width: 692px;
+	margin-top: 10px;
+	background-image: url(../../img/user_profiles/content_box_repeat.png);
+	min-height: 50px;
+	z-index: 1;
+}
+.searchRightColumnContentBgTop{
+	position: absolute;
+	top: 0px;
+	height: 35px;
+	width: 692px;
+	background-image: url(../../img/user_profiles/content_box_top.png);
+	z-index: -1;
+}
+.searchRightColumnContentBgBottom{
+	position: absolute;
+	bottom: 0px;
+	height: 36px;
+	width: 692px;
+	background-image: url(../../img/user_profiles/content_box_bottom.png);
+	z-index: -1;
+}
+.searchUserInfoContainer{
+	position: relative;
+	float: left;
+	height: 50px;
+}
+.searchText{
+	position: relative;
+	font-size: 12px;
+	color: #dfd0ab;
+}
+.searchTextTitle{
+	position: relative;
+	font-size: 14px;
+	height: 15px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	color: #dfd0ab;
+	float: left;
+	text-decoration: underline;
+}
+.searchTextTitleCounter{
+	position: relative;
+	font-size: 14px;
+	height: 15px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	color: #a89065;
+	float: left;
+}
+.searchCategory{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#searchNavigationButton{
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 160px;
+	height: 30px;
+}
+#searchEditButton{
+	position: relative;
+	float: right;
+}
+.searchHeaderText{
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: #a89065;
+	float: left;
+}
+.searchHeaderTextTerm{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: #dfd0ab;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+}

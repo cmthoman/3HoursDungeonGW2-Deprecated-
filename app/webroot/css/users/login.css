@@ -1,0 +1,44 @@
+/** CSS for register.ctp page */
+.containerCenteredUser{
+	position: relative;
+	width: 450px;
+	height: 552px;
+	margin: 0 auto 0 auto;
+	background-image: url(http://media.3hoursdungeon.com/images/Style%20Images/scroll_vertical.png);
+	background-repeat: no-repeat;
+}
+#registerContainer #title{
+	float: left;
+	width: 2000px;
+	height: 30px;
+	margin: 7px 4px 7px 4px;
+	color: #FFFFFF;
+	position: relative;
+}
+.registerFormBox{
+	position: relative;
+	width: 200px;
+	height: 40px;
+	margin: 15px 4px 15px 4px;
+	color: #f4d8ba;
+}
+.inputStyle{
+	margin: 15px 10px 0px 10px;
+	font-size: 9px;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+}
+.inputClass{
+	width: 200px;
+	height: 25px;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-weight: bold;
+	background: #e2dad5;
+	border: 1px solid #603d0f;
+}
+.divider{
+	width:400px;
+	float: left;
+	top: 105px;
+	position: relative;
+	left: 115px;
+}

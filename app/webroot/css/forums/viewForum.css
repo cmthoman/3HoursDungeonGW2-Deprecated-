@@ -1,0 +1,184 @@
+#forumContainerContentBackground{
+	width: 908px;
+	height: 400px;
+	position: absolute;
+	margin-left: 20px;
+	background-image: url(../../img/layouts/default/elements/content_background.png);
+	float: left;
+	left: -3px;
+}
+#forumContainer{
+	position: relative;
+	width: 902px;
+	float: left;
+	left: 20px;
+	z-index: 2;
+	background: #100905;
+	min-height: 600px;
+}
+#forumContainerTop{
+	position: absolute;
+	width: 902px;
+	height: 120px;
+	top: 0px;
+	left: 0px;
+	background-image: url(../../img/layouts/default/elements/forum_background_top.png);
+	z-index: -1;
+}
+#forumHeader{
+	position: relative;
+	float: left;
+	width: 902px;
+	height: 100px;
+	margin-top: 35px;
+}
+#forumFooter{
+	position: relative;
+	float: left;
+	width: 902px;
+	margin-top: 15px;
+	height: 30px;
+}
+.createTopicHeader{
+	position: absolute;
+	width: 124px;
+	height: 35px;
+	bottom: 10px;
+	left: 10px;
+}
+.createTopicFooter{
+	position: absolute;
+	width: 124px;
+	height: 35px;
+	top: 10px;
+	left: 10px;
+}
+.paginationHolderFooter{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.paginationHolderHeader{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+#forumName{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: #dfd0ab;
+	font-size: 16px;
+	font-weight: bold;
+}
+.forumRow{
+	position: relative;
+	float: left;
+	width: 902px;
+	height: 40px;
+	color: #dfd0ab;
+}
+.forumColumnSubject{
+	position: relative;
+	float: left;
+	height: 40px;
+	width: 502px;
+}
+.forumColumnAuthor{
+	position: relative;
+	float: left;
+	height: 40px;
+	width: 125px;
+}
+.forumColumnReplies{
+	position: relative;
+	float: left;
+	height: 40px;
+	width: 75px;
+}
+.forumColumnViews{
+	position: relative;
+	float: left;
+	height: 40px;
+	width: 75px;
+}
+.forumColumnLast{
+	position: relative;
+	float: left;
+	height: 40px;
+	width:125px
+}
+.topicTitle{
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 11px;
+}
+.topicText{
+	margin-top: 12px;
+	
+}
+#bottomSpacer{
+	position: relative;
+	width: 948px;
+	height: 128px;
+	float: left;
+	position: relative;
+	background-image: url(../../img/layouts/default/elements/content_background_footer.png);
+	left: -3px;
+}
+.paginationPage{
+	behavior: url(/PIE.htc);
+	padding-left: 12px;
+	padding-right: 12px;
+	height: 18px;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	text-align: center;
+	padding-top: 4px;
+	-pie-background: url(/../../img/layouts/default/elements/forum_pagination_button_left.png) no-repeat top left,
+	url(/../../img/layouts/default/elements/forum_pagination_button_right.png) no-repeat top right,
+	url(/../../img/layouts/default/elements/forum_pagination_button.png) repeat-x top;
+	
+	background: url(/../../img/layouts/default/elements/forum_pagination_button_left.png) no-repeat top left, 
+	url(/../../img/layouts/default/elements/forum_pagination_button_right.png) no-repeat top right,
+	url(/../../img/layouts/default/elements/forum_pagination_button.png) repeat-x;
+	color: #dfd0ab;
+}
+.paginationPageSelected{
+	behavior: url(/PIE.htc);
+	padding-left: 12px;
+	padding-right: 12px;
+	height: 18px;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	text-align: center;
+	padding-top: 4px;
+	-pie-background: url(/../../img/layouts/default/elements/forum_pagination_button_left_selected.png) no-repeat top left,
+	url(/../../img/layouts/default/elements/forum_pagination_button_right_selected.png) no-repeat top right,
+	url(/../../img/layouts/default/elements/forum_pagination_button_selected.png) repeat-x top;
+	
+	background: url(/../../img/layouts/default/elements/forum_pagination_button_left_selected.png) no-repeat top left, 
+	url(/../../img/layouts/default/elements/forum_pagination_button_right_selected.png) no-repeat top right,
+	url(/../../img/layouts/default/elements/forum_pagination_button_selected.png) repeat-x;
+	color: #dfd0ab;
+}
+.paginationPage a{
+	color: #dfd0ab;
+}
+.paginationPageSelected a{
+	color: #dfd0ab;
+}
+
+.ellipsis{
+	position: relative;
+	float: left;
+	color: #dfd0ab;
+	font-weight: bold;
+	font-size: 20px;
+	height: 22px;
+	top: -6px;
+	margin-left: 11px;
+	margin-right: 7px;
+}

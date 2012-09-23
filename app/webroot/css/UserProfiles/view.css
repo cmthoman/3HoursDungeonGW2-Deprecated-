@@ -1,0 +1,140 @@
+#profileContainerContentBackground{
+	width: 908px;
+	height: 400px;
+	position: absolute;
+	margin-left: 20px;
+	z-index: 0;
+	background-image: url(../../img/layouts/default/elements/content_background.png);
+	float: left;
+	left: -3px;
+}
+#profileContentContainer{
+	position: relative;
+	width: 908px;
+	height: 600px;
+	z-index: 1;
+	float: left;
+	left: -3px;
+}
+#profileBottomSpacer{
+	position: relative;
+	width: 948px;
+	height: 128px;
+	float: left;
+	position: relative;
+	background-image: url(../../img/layouts/default/elements/content_background_footer.png);
+	left: -3px;
+}
+#profileContainer{
+	position: relative;
+	width: 902px;
+	float: left;
+	left: 20px;
+	z-index: 2;
+	background: #100905;
+}
+#profileBackgroundTop{
+	position: absolute;
+	width: 902px;
+	height: 120px;
+	top: 0px;
+	left: 0px;
+	background-image: url(../../img/layouts/default/elements/forum_background_top.png);
+	z-index: -1;
+}
+#profileLeftColumn{
+	position: relative;
+	float: left;
+	width: 190px;
+	min-height: 400px;
+	background-image: url(../../img/user_profiles/profile_navigation_repeat.png);
+	margin-top: 30px;
+}
+#profileLeftColumnBottom{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 190px;
+	height: 150px;
+	background-image: url(../../img/user_profiles/profile_navigation_bottom.png);
+}
+#profileRightColumn{
+	position: relative;
+	float: left;
+	width: 692px;
+	margin-top: 30px;
+}
+.profileRightColumnContentTransparent{
+	position: relative;
+	float: left;
+	width: 692px;
+	min-height: 100px;
+	margin-top: 5px;
+}
+.profileRightColumnContentBg{
+	position: relative;
+	float: left;
+	width: 692px;
+	margin-top: 10px;
+	background-image: url(../../img/user_profiles/content_box_repeat.png);
+	min-height: 50px;
+	z-index: 1;
+}
+.profileRightColumnContentBgTop{
+	position: absolute;
+	top: 0px;
+	height: 35px;
+	width: 692px;
+	background-image: url(../../img/user_profiles/content_box_top.png);
+	z-index: -1;
+	left: 0px;
+}
+.profileRightColumnContentBgBottom{
+	position: absolute;
+	bottom: 0px;
+	height: 36px;
+	width: 692px;
+	background-image: url(../../img/user_profiles/content_box_bottom.png);
+	z-index: -1;
+	left: 0px;
+}
+.profileUserInfoContainer{
+	position: relative;
+	float: left;
+	height: 50px;
+	min-width: 50px;
+}
+.profileUserInfoText{
+	position: relative;
+	clear: both;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	color: #dfd0ab;
+}
+#profileUserAvatar{
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+#profilePortalLogo{
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	width: 160px;
+	height: 110px;
+	background-image: url(../../img/user_profiles/portal_logo.png);
+}
+#profileNavigationButton{
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 160px;
+	height: 30px;
+}
+#profileEditButton{
+	position: relative;
+	float: right;
+}

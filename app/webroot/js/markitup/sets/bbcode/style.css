@@ -1,0 +1,88 @@
+/* -------------------------------------------------------------------
+// markItUp!
+// By Jay Salvat - http://markitup.jaysalvat.com/
+// ------------------------------------------------------------------*/
+.markItUp .markItUpButton1 a	{
+	height: 14px;
+	width: 29px;
+	background-image:url(/js/markitup/sets/bbcode/images/bold.png);
+	-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+	border: 1px solid #913401;
+	margin: 0 5px 0 0;
+}
+.markItUp .markItUpButton2 a	{
+	height: 14px;
+	width: 29px;
+	background-image:url(/js/markitup/sets/bbcode/images/italic.png);
+	-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+	border: 1px solid #913401;
+	margin: 0 5px 0 0;
+}
+.markItUp .markItUpButton3 a	{
+	height: 14px;
+	width: 29px;
+	background-image:url(/js/markitup/sets/bbcode/images/underline.png);
+	-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+	border: 1px solid #913401;
+	margin: 0 5px 0 0;
+}
+
+.markItUp .markItUpButton4 a	{
+	height: 14px;
+	width: 29px;
+	background-image:url(/js/markitup/sets/bbcode/images/link.png);
+	-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+	border: 1px solid #913401;
+	margin: 0 5px 0 0;
+}
+
+.markItUp .markItUpButton5 a	{
+	background-image:url(/js/markitup/sets/bbcode/images/list-bullet.png);
+	height: 14px;
+	width: 29px;
+	-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+	border: 1px solid #913401;
+	margin: 0 5px 0 0;
+}
+.markItUp .markItUpButton6 a	{
+	background-image:url(/js/markitup/sets/bbcode/images/list-item.png);
+	height: 14px;
+	width: 29px;
+	-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+	border: 1px solid #913401;
+	margin: 0 5px 0 0;
+}
+.markItUp .markItUpButton7 a	{
+	background-image:url(/js/markitup/sets/bbcode/images/quotes.png);
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	height: 14px;
+	width: 29px;
+	-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+	border: 1px solid #913401;
+	margin: 0 5px 0 0;
+}
+	
+.markItUp .clean a {
+	background-image:url(/js/markitup/sets/bbcode/images/clean.png);
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.markItUp .preview a {
+	background-image:url(/js/markitup/sets/bbcode/images/preview.png);
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	height: 14px;
+	width: 29px;
+	-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+	border: 1px solid #913401;
+	margin: 0 5px 0 0;
+}

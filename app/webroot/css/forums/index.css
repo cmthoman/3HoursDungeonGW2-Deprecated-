@@ -1,0 +1,160 @@
+/** Default CSS File for the Home Page */
+.containerOneThird{
+	float: left;
+	width: 305px;
+	height: auto;
+	position: relative;
+	margin-bottom: 10px;
+}
+.containerOneThirdBanner{
+	float: left;
+	width: 265px;
+	height: auto;
+	margin-top: 10px;
+	position: relative;
+	border: 1px solid #54473d;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	padding: 5px;
+}
+.bannerTitle{
+	font-size: 11px;
+	font-weight: bold;
+	color: #dfd0ab;
+}
+.containerTwoThirds{
+	float: left;
+	width: 584px;
+	height: auto;
+	position: relative;
+}
+#bannerRightBorder{
+	width: 18px;
+	height: 400px;
+	background-image: url(../../img/layouts/default/elements/content_left_shadow.png);
+	float: left;
+	position: relative;
+	margin-top: 10px;
+}
+#bottomSpacer{
+	position: relative;
+	width: 948px;
+	height: 130px;
+	float: left;
+	position: relative;
+	background-image: url(../../img/layouts/default/elements/content_background_footer.png);
+	left: -3px;
+}
+.categoryContainer{
+	position: relative;
+	width: 584px;
+	min-height: 150px;
+	background-image: url(../../img/layouts/default/elements/news_background.png);
+	margin-bottom: 3px;
+	float: left;
+	z-index: 1;
+	line-height: 20px;
+}
+.categoryContainer ul{
+	margin: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+	line-height: 20px;
+	
+}
+.categorySpacer{
+	width: 564px;
+	padding: 10px;
+	z-index: 2;
+	margin-bottom: 10px;
+}
+.categoryContainerBackgroundTop{
+	position: absolute;
+	width: 584px;
+	height: 50px;
+	background-image: url(../../img/layouts/default/elements/news_background_top.png);
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+.categoryContainerBackgroundBottom{
+	position: absolute;
+	width: 584px;
+	height: 50px;
+	background-image: url(../../img/layouts/default/elements/news_background_bottom.png);
+	bottom: 0px;
+	z-index: -1;
+	left: 0px;
+}
+.categoryHeader{
+	width: 564px;
+	height: 25px;
+	float: left;
+}
+.categoryTitle{
+	font-size: 18px;
+	font-weight: bold;
+	color: #dfd0ab;
+	float: left;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+.categoryControls{
+	position: relative;
+	float: right;
+	height: 25px;
+	margin-right: 10px;
+	top: 8px;
+}
+.forumPoster{
+	font-size: 11px;
+	color: #dfd0ab;
+	clear: both;
+}
+.categoryBody{
+	margin-top: 10px;
+	float: left;
+	color: #dfd0ab;
+	width: 564px;
+}
+.categoryImage{
+	margin-top: 40px;
+	float: left;
+	width: 140px;
+	height: 100px;
+	border: 1px solid black;
+}
+.categoryArchiveContainer{
+	position: relative;
+	width: 584px;
+	min-height: 100px;
+	background-image: url(../../img/layouts/default/elements/news_background.png);
+	margin-bottom: 3px;
+	float: left;
+	z-index: 1
+}
+.categoryArchiveSpacer{
+	position: relative;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	top: 25px;
+	z-index: 2;
+}
+.forumContainer{
+	position: relative;
+	float: left;
+	margin: 5px;
+	width: 260px;
+	height: 90px;
+	background-image: url(../../img/layouts/default/elements/category_forum_container.png);
+	padding: 5px;
+}
+.forumTitle{
+	font-weight: bold;
+	font-size: 13px;
+}
+.forumDescription{
+	font-size: 11px;
+}
