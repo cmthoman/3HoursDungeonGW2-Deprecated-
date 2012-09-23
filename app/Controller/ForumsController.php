@@ -461,6 +461,7 @@ class ForumsController extends AppController {
 			if($this->Session->read('Topic.viewed.'.$post['FTopic']['id']) != 'true'){
 				$this->FTopic->id = $post['FTopic']['id'];
 				$this->FTopic->set('views', $post['FTopic']['views']+1);
+				$this->FTopic->set('updated', false);
 				$this->FTopic->save($this->data);
 				$this->Session->write('Topic.viewed.'.$post['FTopic']['id'], 'true');
 			}
@@ -470,6 +471,7 @@ class ForumsController extends AppController {
 				$this->FTopic->id = $post['FTopic']['id'];
 				if(!empty($this->request->data['FTopic']['title'])){
 					$this->FTopic->set('title', $this->request->data['FTopic']['title']);
+					$this->FTopic->set('updated', false);
 					if($this->FTopic->save($this->data)){
 						$this->redirect(array('controller' => 'forums', 'action' => 'viewTopic/'.$id));
 					}
