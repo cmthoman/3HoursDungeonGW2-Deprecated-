@@ -63,9 +63,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => true,
 		'host' => 'data.3hoursdungeon.com',
-		'login' => 'chris3hd',
+		'login' => '3hdbeta',
 		'password' => 'a32924593chris2!B',
-		'database' => '3hd_shared',
+		'database' => 'beta_3hd_shared',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
@@ -74,9 +74,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => true,
 		'host' => 'data.3hoursdungeon.com',
-		'login' => 'chris3hd',
+		'login' => '3hdbeta',
 		'password' => 'a32924593chris2!B',
-		'database' => 'gw2_content',
+		'database' => 'beta_gw2_content',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
