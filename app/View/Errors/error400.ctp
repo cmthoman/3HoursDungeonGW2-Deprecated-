@@ -19,7 +19,6 @@
 <div class="containerContent">
 	<div id="containerContentBackground"></div>
 	<div class="clear"></div>
-	<div id="bottomSpacer"></div>
 	<div class = "containerCentered" style="height: 600px; color: #dfd0ab; margin-top: 100px;">
 		<h2><?php echo $name; ?></h2>
 		<p class="error">
@@ -35,4 +34,5 @@
 		endif;
 		?>
 	</div>
+	<div id="bottomSpacer"></div>
 </div>

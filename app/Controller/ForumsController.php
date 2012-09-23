@@ -18,6 +18,10 @@ class ForumsController extends AppController {
 		)
 	);
 	
+	function beforeFilter(){
+		parent::beforeFilter();
+	}
+		
 	function index(){
 		$this->FTopic->unbindModel(
 			array('belongsTo' => array('User'))
@@ -454,9 +458,12 @@ class ForumsController extends AppController {
 		if($this->Auth->user()){
 			$list = $this->FForum->find('list');
 			$this->set('forumList', $list);
-			//$this->FTopic->id = $post['FTopic']['id'];
-			//$this->FTopic->set('views', $post['FTopic']['views']+1);
-			//$this->FTopic->save($this->data);
+			if($this->Session->read('Topic.viewed.'.$post['FTopic']['id']) != 'true'){
+				$this->FTopic->id = $post['FTopic']['id'];
+				$this->FTopic->set('views', $post['FTopic']['views']+1);
+				$this->FTopic->save($this->data);
+				$this->Session->write('Topic.viewed.'.$post['FTopic']['id'], 'true');
+			}
 			if(!empty($this->request->data)){
 				$this->FPost->set('f_topic_id', $id);
 				$this->FPost->set('user_id', $this->Auth->user('id'));
@@ -485,8 +492,8 @@ class ForumsController extends AppController {
 						$this->FTopic->set('replies', $post['FTopic']['replies']+1);
 						$this->FTopic->set('last_poster', $globalUserData['UserName']);
 						$this->FTopic->save($this->data);
-						//$this->User->set('f_post_count', $this->Auth->User('f_post_count') + 1);
-						//$this->User->save($this->data);
+						$this->User->set('f_post_count', $this->Auth->User('f_post_count') + 1);
+						$this->User->save($this->data);
 						$this->Session->setFlash('Reply Submitted');
 						$this->redirect(array('controller' => 'forums', 'action' => 'viewTopic/'.$id));
 					}

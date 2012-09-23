@@ -43,6 +43,7 @@ class AppController extends Controller {
 		$this->Auth->allow();
 		$this->_checkSession();
 		$this->_checkAccount();
+		$this->Security->csrfExpires = "+2 hours";
 	}
 	
 	function _checkAccount(){
