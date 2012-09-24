@@ -182,6 +182,37 @@ class UserProfilesController extends AppController {
 			}else{
 				$this->redirect(array('controller' => 'home'));
 			}
+			if(!empty($this->request->data['changePassword'])){
+				if(Security::hash($this->request->data['changePassword']['oldPassword'], NULL, TRUE) == $viewUserData['User']['password']){
+					$this->User->id = $id;
+					$this->User->set('password', $this->request->data['changePassword']['password']);
+					$this->User->set('password2', $this->request->data['changePassword']['password2']);
+					if($this->User->save($this->data)){
+						$this->Session->setFlash('Your password has been updated!');
+						$this->redirect(array('controller' => 'UserProfiles', 'action' => 'account/'.$id));
+					}
+				}else{
+					$this->Session->setFlash('Your old password was incorrect, please retype it and try again.');
+					$this->redirect(array('controller' => 'UserProfiles', 'action' => 'account/'.$id));
+				}
+				
+			}else
+			if(!empty($this->request->data['changeEmail'])){
+				if($this->request->data['changeEmail']['oldEmail'] == $viewUserData['User']['email']){
+					$this->User->set('activation_hash', Security::hash(rand(20, 40), NULL, TRUE));
+					if($this->User->save($this->data)){
+						$email = new CakeEmail();
+						$email->emailFormat('text');
+						$email->template('changeEmail', 'changeEmail');
+						$email->from(array('noreply@3hoursdungeon.com' => '3 Hours Dungeon'));
+						$email->to($this->data['User']['email']);
+						$email->subject('3 Hours Dungeon Email Change Request');
+						$email->send();
+						$this->Session->setFlash('Your email change request has been processed. To finish changing your email, go to your new address and confirm it.');
+						$this->redirect(array('controller' => 'user', 'action' => 'account'));
+					}					
+				}
+			}
 		}else{
 			$this->redirect(array('controller' => 'home'));
 		}

@@ -76,10 +76,9 @@
 .profileRightColumnContentBg{
 	position: relative;
 	float: left;
-	width: 690px;
+	width: 692px;
 	margin-bottom: 10px;
 	background-image: url(../../img/user_profiles/content_box_repeat.png);
-	background-position-x: -1px;
 	min-height: 50px;
 	z-index: 1;
 }
