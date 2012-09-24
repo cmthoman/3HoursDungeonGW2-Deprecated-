@@ -145,13 +145,17 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 				?>
 				</div>
 				<div class="socialMediaIcon">
-					
 				<?php				
 					echo $this->Html->link(
 						$this->Html->image("layouts/default/buttons/twitter.png", array("alt" => "Home", 'height' => '35px', 'width' => '35px')),
 						'http://twitter.com/3HoursDungeon',
 						array('target' => "_blank", 'escape' => false)
 					);
+				?>
+				</div>
+				<div class="socialMediaIcon" style="margin-right: 10px;">
+				<?php				
+					echo $this->Html->image("layouts/default/buttons/socialmedia_text.png", array("alt" => "Home", 'height' => '35px', 'width' => '100px'));
 				?>
 				</div>
 			</div>
