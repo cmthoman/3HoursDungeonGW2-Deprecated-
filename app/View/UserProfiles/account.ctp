@@ -1,3 +1,6 @@
+<?php
+	$this->Html->addCrumb($viewUserData['User']['username'], '/UserProfiles/view/'.$viewUserData['User']['id']);
+?>
 <div class="containerContent">
 	<div id="profileContainerContentBackground"></div><div class="clear"></div>
 	<?php if($globalUserData['Editor'] == 'true' or $localUserData['Editor'] == 'true'): ?>
