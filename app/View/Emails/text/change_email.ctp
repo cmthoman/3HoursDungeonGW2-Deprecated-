@@ -9,4 +9,4 @@ If you don't wish to change your email address at this time simply disregard thi
 Sincerely,
 The 3HD Team.
 
-Go here to change your email: <?php echo 'http://gw2.3hd.aswanmedia.com/UserProfiles/changeEmail?username='.$this->request->data['User']['username'].'&key='.$this->request->data['User']['activate_hash'].'&email='.$this->data['changeEmail']['email']; ?>
+Go here to change your email: <?php echo 'http://gw2.3hoursdungeon.com/UserProfiles/changeEmail?username='.$this->request->data['User']['username'].'&key='.$this->request->data['User']['activate_hash'].'&email='.$this->data['changeEmail']['email']; ?>
