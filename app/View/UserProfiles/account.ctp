@@ -17,11 +17,13 @@
 		)
 	);
 	?>
-	<?php if($this->Form->error('password') || $this->Form->error('password2')): ?>
+	<?php if($this->Form->error('password') || $this->Form->error('password2') || $this->Form->error('email') || $this->Form->error('email2')): ?>
 	<div class ="containerCentered" id="errors" style="margin-bottom: 10px; width: 890px; padding: 5px; left: -2px;">
 		<b>Please correct the following errors and resubmit:</b> <br />
 		<?php echo $this->Form->error('password'); ?>
 		<?php echo $this->Form->error('password2'); ?>
+		<?php echo $this->Form->error('email'); ?>
+		<?php echo $this->Form->error('email2'); ?>
 	</div>
 	<?php endif; ?>
 	<?php echo $this->Form->end() ?>
@@ -106,7 +108,7 @@
 					));
 					?>
 				</div>
-				<div class="profileSubmitButton" style="float: left; margin-top: 20px;"><?php echo $this->Form->end('/img/layouts/default/buttons/submit.png'); ?></div>
+				<div class="profileSubmitButton" style="float: left; margin-top: 19px;"><?php echo $this->Form->end('/img/layouts/default/buttons/submit.png'); ?></div>
 				<div class="clear"></div>
 				<div style="margin-top: 20px; padding: 5px; color: #dfd0ab; font-weight: bold;  font-size: 11px;">Change Email</div>
 				<?php
@@ -120,8 +122,8 @@
 				?>
 				<div style="padding: 5px; float: left;">
 					<?php 
-					echo $this->Form->input('olEmail', array(
-					'label'=>'Old Email:<br/>',
+					echo $this->Form->input('password', array(
+					'label'=>'Your Account Password:<br/>',
 					'class' => 'profileInputStyle',
 					'error' => ''
 					));
@@ -145,7 +147,7 @@
 					));
 					?>
 				</div>
-				<div class="profileSubmitButton" style="float: left; margin-top: 20px;"><?php echo $this->Form->end('/img/layouts/default/buttons/submit.png'); ?></div>
+				<div class="profileSubmitButton" style="float: left; margin-top: 19px;"><?php echo $this->Form->end('/img/layouts/default/buttons/submit.png'); ?></div>
 				<div class="clear"></div><div class="verticalSpacer10px"></div>
 			</div>
 		</div>

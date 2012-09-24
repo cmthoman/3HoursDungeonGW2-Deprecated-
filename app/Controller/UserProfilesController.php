@@ -169,7 +169,9 @@ class UserProfilesController extends AppController {
 	}
 
 	function account($id = NULL){
-		if(!empty($id)){
+		$globalUserData = $this->Session->read('User.globalData'); //Set globalUserData
+		$localUserData = $this->Session->read('User.localData'); //Set localUserData
+		if(!empty($id) && $globalUserData['id'] == $id){
 			$this->set('viewUserData', $viewUserData = $this->User->find('first', array('conditions' => array('User.id' => $id))));
 			if(!empty($viewUserData['UserProfile']['id'])){
 				$this->UserGroup->unbindModel(
@@ -198,23 +200,56 @@ class UserProfilesController extends AppController {
 				
 			}else
 			if(!empty($this->request->data['changeEmail'])){
-				if($this->request->data['changeEmail']['oldEmail'] == $viewUserData['User']['email']){
-					$this->User->set('activation_hash', Security::hash(rand(20, 40), NULL, TRUE));
-					if($this->User->save($this->data)){
+				if(Security::hash($this->request->data['changeEmail']['password'], NULL, TRUE) == $viewUserData['User']['password']){
+					$hash = Security::hash(rand(20, 40), NULL, TRUE);
+					$this->User->id = $id;
+					$this->User->set('activate_hash', $hash);
+					$this->User->set('email', $this->request->data['changeEmail']['email']);
+					$this->User->set('email2', $this->request->data['changeEmail']['email2']);
+					if($this->User->validates()){
+					    if($this->User->save($this->data)){
+						$this->request->data['User']['activate_hash'] = $hash;
+						$this->request->data['User']['username'] = $viewUserData['User']['username'];
 						$email = new CakeEmail();
 						$email->emailFormat('text');
 						$email->template('changeEmail', 'changeEmail');
 						$email->from(array('noreply@3hoursdungeon.com' => '3 Hours Dungeon'));
-						$email->to($this->data['User']['email']);
+						$email->to($viewUserData['User']['email']);
 						$email->subject('3 Hours Dungeon Email Change Request');
 						$email->send();
 						$this->Session->setFlash('Your email change request has been processed. To finish changing your email, go to your new address and confirm it.');
-						$this->redirect(array('controller' => 'user', 'action' => 'account'));
+						$this->redirect(array('controller' => 'UserProfiles', 'action' => 'account/'.$id));
+					}
+					}else{
+					    $errors = $this->User->validationErrors;
 					}					
+				}else{
+					$this->Session->setFlash('The Password you entered to change your email was incorrect. Try Again.');
+					$this->redirect(array('controller' => 'UserProfiles', 'action' => 'account/'.$id));
 				}
 			}
 		}else{
 			$this->redirect(array('controller' => 'home'));
+		}
+	}
+
+	function changeEmail(){
+		$username = $this->params['url']['username'];
+		$key = $this->params['url']['key'];
+		$email = $this->params['url']['email'];
+		$activate_user = $this->User->find('first', array('conditions'=>array('User.username'=>$username, 'User.activate_hash'=>$key)));
+		if(!empty($activate_user)){
+			$this->User->id = $activate_user['User']['id'];
+			if($this->User->saveField('email', $email)){
+				$this->Session->setFlash('Email change successful!');
+				$this->redirect(array('controller' => 'UserProfiles', 'action' => 'account/'.$activate_user['User']['id']));
+			}else{
+				$this->Session->setFlash('Email change failed, please retry. If this problem persists please contact a site admin.');
+				$this->redirect(array('controller' => 'UserProfiles','action' => 'account/'.$activate_user['User']['id']));
+			}
+		}else{
+			$this->Session->setFlash('Invalid email change request data.');
+			$this->redirect(array('action' => 'account'));
 		}
 	}
 
