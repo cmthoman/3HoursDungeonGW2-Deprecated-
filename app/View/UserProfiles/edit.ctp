@@ -24,6 +24,7 @@
 		<?php echo $this->Form->error('server'); ?>
 	</div>
 	<?php endif; ?>
+	<?php echo $this->Form->end(); ?>
 	<div id="profileContainer">
 		<div id="profileBackgroundTop"></div>
 		<div id="profileBackgroundBottom"></div>
@@ -72,6 +73,14 @@
 				<div class="profileRightColumnContentBgTop"></div>
 				<div class="profileRightColumnContentBgBottom"></div>
 				<div class="profileUserInfoText" style="margin:5px; font-weight: bold;">Profile Options</div><br/>
+				<?php echo $this->Form->create('UserProfile', array(
+						'inputDefaults' => array(
+							'label' => false,
+							'div' => 'profileInputContainerStyle',
+						)
+					)
+				);
+				?>
 				<div class="profileFormField">
 				<?php echo $this->Form->input('display_name', array(
 					'before'=>'Character Name<br/>', 'error'=>'', 'class' => 'profileInputStyle'
