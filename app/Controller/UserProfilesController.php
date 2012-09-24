@@ -167,5 +167,25 @@ class UserProfilesController extends AppController {
 			$this->redirect(array('controller' => 'home'));
 		}
 	}
+
+	function account($id = NULL){
+		if(!empty($id)){
+			$this->set('viewUserData', $viewUserData = $this->User->find('first', array('conditions' => array('User.id' => $id))));
+			if(!empty($viewUserData['UserProfile']['id'])){
+				$this->UserGroup->unbindModel(
+				    array('hasMany' => array('UserProfile'))
+				);
+				$this->User->unbindModel(
+					array('hasMany' => array('FPost'))
+				);
+				$this->set('viewUserGroupData', $viewUserGroupData = $this->UserGroup->find('first', array('conditions' => array('UserGroup.id' => $viewUserData['UserProfile']['user_group_id']))));
+			}else{
+				$this->redirect(array('controller' => 'home'));
+			}
+		}else{
+			$this->redirect(array('controller' => 'home'));
+		}
+	}
+
 }
 ?>

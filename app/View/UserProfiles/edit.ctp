@@ -40,13 +40,13 @@
 				?>
 			</div>
 			<div id="profileNavigationButton">
-				<?php /*
+				<?php
 					echo $this->Html->link(
 					    $this->Html->image("user_profiles/button_account.png", array("alt" => "account")),
 					    array("controller" => "UserProfiles", "action"=>"account/".$viewUserData['User']['id']),
 					    array('escape' => false)
 					);
-				*/?>
+				?>
 			</div>
 			<?php endif; ?>
 			<div id="profileLeftColumnBottom"></div>

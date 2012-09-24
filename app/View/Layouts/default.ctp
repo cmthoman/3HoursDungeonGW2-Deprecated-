@@ -169,7 +169,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<div id="sql_debug">
 			<?php //echo $this->element('sql_dump');?>
 			<?php //echo debug($userData); ?>
-			<?php echo debug($forumData); ?>
+			<?php //echo debug($forumData); ?>
 			<?php //echo debug($test); ?>
 			<?php //echo debug(); ?>
 		</div>
