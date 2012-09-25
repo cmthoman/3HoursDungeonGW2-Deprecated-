@@ -56,10 +56,16 @@ class AppController extends Controller {
 				$this->redirect(array('controller' => 'users', 'action' => 'activate'));
 			}
 			if($globalUserData['Banned'] == 'true'){
-				$this->set($error, 'Your account has been suspended until '.$this->Auth->user('suspended').'!');
-				$this->Auth->logout();
-				$this->Session->destroy('User');
-				$this->redirect(array('controller' => 'users', 'action' => 'banned'));
+				if(date("Y-m-d H:i:s") < $globalUserData['SuspendedTime']){
+					$this->Auth->logout();
+					$this->Session->destroy('User');
+					$this->redirect(array('controller' => 'users', 'action' => 'banned/'.$globalUserData['id']));
+				}else{
+					$this->User->id = $globalUserData['id'];
+					$this->User->set('user_role_id', 4);
+					$this->User->set('suspended', '0000-00-00 00:00:00');
+					$this->User->save($this->data);
+				}
 			}
 		}
 	}
@@ -127,6 +133,7 @@ class AppController extends Controller {
 					'Editor' =>  $globalUserData['UserRole']['editor'],
 					'Moderator' => $globalUserData['UserRole']['moderator'],
 					'Banned' => $globalUserData['UserRole']['banned'],
+					'SuspendedTime' => $this->Auth->user('suspended'),
 					'UserName' => $globalUserName,
 					'id' => $this->Auth->user('id')
 				);

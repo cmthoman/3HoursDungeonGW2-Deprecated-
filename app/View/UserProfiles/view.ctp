@@ -3,13 +3,15 @@
 ?>
 <div class="containerContent">
 	<div id="profileContainerContentBackground"></div><div class="clear"></div>
-	<?php if($globalUserData['Editor'] == 'true' or $localUserData['Editor'] == 'true'): ?>
-	<!--<div class="pageControls">
+	<?php if($globalUserData['Editor'] == 'true' or $localUserData['Editor'] == 'true' or $globalUserData['Admin'] or $globalUserData['Moderator']	or $localUserData['Moderator']): ?>
+	<div class="pageControls">
 		<div class="pageControlsTitle">PAGE OPTIONS</div>
 		<div class="pageControlsButton">
-			<img src="/img/layouts/default/elements/plus.png"><?php echo $this->Html->link(' Add News',array('controller' => 'News', 'action' => 'create', 'full_base' => true)); ?>
+			<!--<img src="/img/layouts/default/elements/plus.png"><?php echo $this->Html->link(' Reset Password',array('controller' => 'users', 'action' => 'resetPassword&userID=', 'full_base' => true)); ?>-->
+			<img src="/img/layouts/default/elements/plus.png"><?php echo $this->Html->link(' Suspend User',array('controller' => 'users', 'action' => 'suspend/'.$viewUserData['User']['id'], 'full_base' => true)); ?>	
+			<img src="/img/layouts/default/elements/plus.png"><?php echo $this->Html->link(' Clear Suspension',array('controller' => 'users', 'action' => 'unsuspend/'.$viewUserData['User']['id'], 'full_base' => true)); ?>
 		</div>
-	</div>-->
+	</div>
 	<?php endif; ?>
 	<?php echo $this->Session->flash(); ?>
 	<div id="profileContainer">

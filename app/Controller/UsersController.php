@@ -76,4 +76,35 @@ class UsersController extends AppController {
 	function activateSuccess(){
 		
 	}
+	
+	function suspend($id = NULL){
+		$globalUserData = $this->Session->read('User.globalData'); //Set globalUserData
+		$localUserData = $this->Session->read('User.localData'); //Set localUserData
+		if($globalUserData['Admin'] == 'true' or $globalUserData['Editor'] == 'true' or $globalUserData['Moderator'] == 'true'
+		or $localUserData['Editor'] == 'true' or $localUserData['Moderator'] == 'true'){
+			$this->User->id = $id;
+			$this->User->set('user_role_id', '5');
+			$duration = strtotime("+1 month");
+			$this->User->set('suspended', date("Y-m-d H:i:s", $duration));
+			$this->User->save($this->data);
+			$this->redirect(array('controller' => 'UserProfiles', 'action' => 'view/'.$id));
+		}
+	}
+
+	function banned($id = NULL){
+		$this->set('suspended', $this->User->find('first', array('conditions' => array('User.id' => $id), 'fields' => array('User.suspended'))));
+	}
+	
+	function unsuspend($id = NULL){
+		$globalUserData = $this->Session->read('User.globalData'); //Set globalUserData
+		$localUserData = $this->Session->read('User.localData'); //Set localUserData
+		if($globalUserData['Admin'] == 'true' or $globalUserData['Editor'] == 'true' or $globalUserData['Moderator'] == 'true'
+		or $localUserData['Editor'] == 'true' or $localUserData['Moderator'] == 'true'){
+			$this->User->id = $id;
+			$this->User->set('user_role_id', 4);
+			$this->User->set('suspended', '0000-00-00 00:00:00');
+			$this->User->save($this->data);
+			$this->redirect(array('controller' => 'UserProfiles', 'action' => 'view/'.$id));
+		}
+	}
 }

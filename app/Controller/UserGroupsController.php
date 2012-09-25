@@ -45,11 +45,11 @@ class UserGroupsController extends AppController {
 					$this->UserProfile->save();
 					$this->UserGroupQueue->delete($this->request->data['UserGroup']['user_group_queue_id']);
 					$this->Session->setFlash('User was approved');
-					$this->redirect(array('controller' => 'usergroups'));
+					$this->redirect(array('controller' => 'UserGroups'));
 				}else{
 					$this->UserGroupQueue->delete($this->request->data['UserGroup']['user_group_queue_id']);
 					$this->Session->setFlash('User was denied');
-					$this->redirect(array('controller' => 'usergroups'));
+					$this->redirect(array('controller' => 'UserGroups'));
 				}
 			}
 		}else{
