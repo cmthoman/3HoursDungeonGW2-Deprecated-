@@ -1,3 +1,11 @@
+This project was at one point a friend of mine's vision to build a gaming community. I developed the following project as a learning experience in cakephp. The outcome is essentially a forum and basic user management system in cakephp running on MYSQL and Apache on Debian Linux.
+
+
+
+///////////////////
+//OLD DEPRECIATED//
+///////////////////
+
 3 Hours Dungeon is a chain of interconnected websites built to support a large gaming community. Our goal is to provide members with content for all the games we support. Each game resides on a "portal" and each portal has a list of user user roles, profiles and game features, but is connected through a universal log-in system.
 
 Every "Portal" is based off of our "Base" project hub which contains the core elements for each 3 Hours Dungeon "Portal". From the base, specific features emerge for each portal such as extensive profile customization and unqiue features for the game being viewed.
