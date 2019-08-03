@@ -16,7 +16,7 @@ The entire project is based on CakePHP. Configuration is simple and should alrea
 
 Setting up your database:
 
-The website log-in system requires that you have the database named "3hd_shared" created. Simply import "clean_3hd_shared.sql" into this database to begin. Each "portal" has a "content" database named <abreviated game name>_content. This is the Guild Wars 2 portal, the content database is named "gw2_content". Simply import "clean_gw2_content.sql" into your database to begin.
+The website log-in system requires that you have the database named "3hd_shared" created. Simply import "clean_3hd_shared.sql" into this database to begin. Each "portal" has a "content" database named <abbreviated game name>_content. This is the Guild Wars 2 portal, the content database is named "gw2_content". Simply import "clean_gw2_content.sql" into your database to begin.
 
 Connecting the project to your database:
 
